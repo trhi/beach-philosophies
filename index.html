@@ -9,12 +9,12 @@
 </head>
 <body>
 <tw-story><noscript><tw-noscript>JavaScript needs to be enabled to play beach-philosophies.</tw-noscript></noscript></tw-story>
-<tw-storydata name="beach-philosophies" startnode="1" creator="Twine" creator-version="2.10.0" format="Harlowe" format-version="3.3.9" ifid="ADCDAC28-75F3-4133-8FED-F8BD15CA8CF7" options="" tags="" zoom="1" hidden><style role="stylesheet" id="twine-user-stylesheet" type="text/twine-css">tw-sidebar { display: none; }</style><script role="script" id="twine-user-script" type="text/twine-javascript"></script><tw-passagedata pid="1" name="start" tags="" position="725,375" size="100,100">you walk along a beach, you (cycling-link: &quot;w alk&quot;, &quot;wa lk&quot;, &quot;wal k&quot;, &quot;walk &quot;), and [[you walk]]
+<tw-storydata name="beach-philosophies" startnode="1" creator="Twine" creator-version="2.10.0" format="Harlowe" format-version="3.3.9" ifid="ADCDAC28-75F3-4133-8FED-F8BD15CA8CF7" options="" tags="" zoom="1" hidden><style role="stylesheet" id="twine-user-stylesheet" type="text/twine-css"></style><script role="script" id="twine-user-script" type="text/twine-javascript"></script><tw-passagedata pid="1" name="start" tags="" position="725,375" size="100,100">you walk along a beach, you (cycling-link: &quot;w alk&quot;, &quot;wa lk&quot;, &quot;wal k&quot;, &quot;walk &quot;), and [[you walk]]
 
 
 (set: $mood to &quot;moody&quot;)</tw-passagedata><tw-passagedata pid="2" name="you walk" tags="" position="725,500" size="100,100">and you [[walk]]</tw-passagedata><tw-passagedata pid="3" name="walk" tags="" position="725,625" size="100,100">[[and]] you keep walking</tw-passagedata><tw-passagedata pid="4" name="keep walking" tags="" position="725,750" size="100,100">after all, that is what [[you]] came [[here]] to do</tw-passagedata><tw-passagedata pid="5" name="you" tags="" position="725,875" size="100,100">
 
-you are (text-colour:magenta)[(cycling-link: bind $mood, &quot;tired&quot;, &quot;excited&quot;, &quot;gloomy&quot;, &quot;alert&quot;, &quot;sad&quot;, &quot;present&quot;)
+you are (text-colour:magenta)[(cycling-link: bind $mood, &quot;tired&quot;, &quot;excited&quot;, &quot;gloomy&quot;, &quot;alert&quot;, &quot;sad&quot;, &quot;curious&quot;, &quot;bored&quot;, &quot;happy&quot;, &quot;present&quot;)
 ]
 you [[keep walking]]</tw-passagedata><tw-passagedata pid="6" name="here" tags="" position="850,875" size="100,100">a long stretch of sandy beach, [[no buildings in sight]]</tw-passagedata><tw-passagedata pid="7" name="and" tags="" position="850,750" size="100,100">and you [[keep walking]]</tw-passagedata><tw-passagedata pid="8" name="no buildings in sight" tags="" position="850,1000" size="100,100">the scene echoes [[your|you]] $mood mood, you [[pause]]</tw-passagedata><tw-passagedata pid="9" name="pause" tags="" position="925,1125" size="100,100">you take a moment to [[listen]]</tw-passagedata><tw-passagedata pid="10" name="listen" tags="" position="900,1250" size="100,100">to the sound of the [[sea]]</tw-passagedata><tw-passagedata pid="11" name="sea" tags="" position="900,1375" size="100,100">sea shells [[scattered]] at your [[feet]]</tw-passagedata><tw-passagedata pid="12" name="Untitled Passage 1" tags="" position="1075,1175" size="100,100"></tw-passagedata><tw-passagedata pid="13" name="scattered" tags="" position="1075,1375" size="100,100">sometimes [[everything]] is so scattered</tw-passagedata><tw-passagedata pid="14" name="feet" tags="" position="900,1500" size="100,100">you pick up [[a shell]]</tw-passagedata><tw-passagedata pid="15" name="everything" tags="" position="1225,1375" size="100,100">you don&#39;t even [[remember]]</tw-passagedata><tw-passagedata pid="16" name="remember" tags="" position="1225,1500" size="100,100">what you were supposed to be [[doing|feet]]</tw-passagedata><tw-passagedata pid="17" name="a shell" tags="" position="900,1625" size="100,100">you observe it&#39;s (text-colour:magenta)[(cycling-link: bind $shell, &quot;shape&quot;, &quot;color&quot;, &quot;imperfections&quot;)]
 
@@ -24,14 +24,30 @@ then you [[daydream]]</tw-passagedata><tw-passagedata pid="18" name="daydream" t
 
 (if: $shellDestiny contains &quot;pocket&quot;)[the shell snuggles into the [[pocket]]]
 
-(if: $shellDestiny contains &quot;sand&quot;)[the shell is lost among its kind in the [[sand]]]</tw-passagedata><tw-passagedata pid="19" name="water" tags="" position="900,1875" size="100,100">
+(if: $shellDestiny contains &quot;sand&quot;)[the shell is lost among its kind in the [[sand]]]</tw-passagedata><tw-passagedata pid="19" name="water" tags="" position="900,2075" size="100,100">
 
 (if: $shell contains &quot;color&quot;)[color is soon invisible as it floats deeper]
 
 (if: $shell contains &quot;shape&quot;)[it&#39;s shape dictates the way it swims towards the bottom]
 
 (if: $shell contains &quot;imperfections&quot;)[the sea grinds away it&#39;s imperfections]
-</tw-passagedata><tw-passagedata pid="20" name="pocket" tags="" position="1025,1875" size="100,100"></tw-passagedata><tw-passagedata pid="21" name="sand" tags="" position="775,1875" size="100,100"></tw-passagedata><tw-passagedata pid="22" name="Untitled Passage 2" tags="" position="1050,450" size="100,100"></tw-passagedata><tw-passagedata pid="23" name="Untitled Passage" tags="" position="1175,450" size="100,100"></tw-passagedata></tw-storydata>
+</tw-passagedata><tw-passagedata pid="20" name="pocket" tags="" position="1325,1750" size="100,100">(if: $shell contains &quot;color&quot;)[color soon becomes [[invisible]] ]
+
+(if: $shell contains &quot;shape&quot;)[shape forms pocket, [[hand embraces]]]
+
+(if: $shell contains &quot;imperfections&quot;)[ [[cherished]], it ponders existence]
+</tw-passagedata><tw-passagedata pid="21" name="sand" tags="" position="450,1750" size="100,100">(if: $shell contains &quot;color&quot;)[color blends into it&#39;s surroundings and becomes one of many again]
+
+(if: $shell contains &quot;shape&quot;)[shape breaks [[empty space]] of sand]
+
+(if: $shell contains &quot;imperfections&quot;)[neglected, [[I]] ponder my existence]
+</tw-passagedata><tw-passagedata pid="22" name="Untitled Passage 2" tags="" position="1050,450" size="100,100"></tw-passagedata><tw-passagedata pid="23" name="Untitled Passage" tags="" position="1175,450" size="100,100"></tw-passagedata><tw-passagedata pid="24" name="I" tags="" position="175,1750" size="100,100"></tw-passagedata><tw-passagedata pid="25" name="invisible" tags="" position="1775,1775" size="100,100">in the [[dark of]] the pocket</tw-passagedata><tw-passagedata pid="26" name="hand embraces" tags="" position="1900,1775" size="100,100">[[cherished]], it ponders about</tw-passagedata><tw-passagedata pid="27" name="cherished" tags="" position="2025,1900" size="100,100">where will life [[take me next]]</tw-passagedata><tw-passagedata pid="28" name="take me next" tags="" position="2025,2025" size="100,100">it takes me on a [[walk]]</tw-passagedata><tw-passagedata pid="29" name="matter" tags="" position="1775,1900" size="100,100">minerals, [[over time]]</tw-passagedata><tw-passagedata pid="30" name="over time" tags="" position="1775,2025" size="100,100">digested by [[somebody]]</tw-passagedata><tw-passagedata pid="31" name="dark of" tags="" position="1900,1900" size="100,100">after all, what does it [[matter]]</tw-passagedata><tw-passagedata pid="32" name="somebody" tags="" position="1775,2150" size="100,100">that once [[needed a shell]]</tw-passagedata><tw-passagedata pid="33" name="needed a shell" tags="" position="1775,2275" size="100,100">[[me|shell-me]]</tw-passagedata><tw-passagedata pid="34" name="shell-me" tags="" position="1775,2400" size="100,100">bouncing in a pocket, [[walking|walk]]</tw-passagedata><tw-passagedata pid="35" name="empty space" tags="" position="450,1875" size="100,100">(if: $mood contains &quot;happy&quot;)[$mood to be alone]
+
+(if: $mood contains &quot;sad&quot;)[$mood, alone]
+
+(if: $mood contains &quot;alert&quot;)[alone, $mood to my surroundings]
+
+(if: $mood contains &quot;bored&quot;)[$mood, wishing for an [[adventure]] ]</tw-passagedata><tw-passagedata pid="36" name="adventure" tags="" position="450,2000" size="100,100">[[trying]] very hard</tw-passagedata><tw-passagedata pid="37" name="trying" tags="" position="450,2125" size="100,100">to [[attract]] someone else</tw-passagedata><tw-passagedata pid="38" name="attract" tags="" position="450,2250" size="100,100">like [[a shell|shell-screaming]]</tw-passagedata><tw-passagedata pid="39" name="screaming" tags="" position="450,2375" size="100,100">in silence, on [[the sand]]</tw-passagedata><tw-passagedata pid="40" name="the sand" tags="" position="450,2500" size="100,100">looking up to [[all that pass]]</tw-passagedata><tw-passagedata pid="41" name="all that pass" tags="" position="450,2625" size="100,100">hoping someone will help me [[walk]]</tw-passagedata><tw-passagedata pid="42" name="shell-screaming" tags="" position="325,2375" size="100,100">[[screaming]]</tw-passagedata></tw-storydata>
 <script title="Twine engine code" data-main="harlowe">(function(){"use strict";
 var require,define;!function(){var e={},r={};require=function(i){var n=e[i];return n&&(r[i]=n[1].apply(void 0,n[0].map(require)),e[i]=void 0),r[i]},(define=function(r,i,n){if("function"==typeof r)return r();e[r]=[i,n]}).amd=!0}();/*!
  * https://github.com/paulmillr/es6-shim
