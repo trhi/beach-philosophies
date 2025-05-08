@@ -15,7 +15,7 @@
 
 tw-story {
     transition: background-color 0.5s ease;
-  	font-size: 2.25em;
+  	font-size: 1.85em;
 }
 
 tw-link, .enchantment-link {
@@ -137,11 +137,16 @@ they are [[all]] so [[special]]</tw-passagedata><tw-passagedata pid="76" name="a
 (for: each _item, ...$shellsInPocket)[//_item//
 ]
 
-[[goodbye]]</tw-passagedata><tw-passagedata pid="79" name="goodbye" tags="" position="1575,2250" size="100,100">you (text-colour:magenta)[(cycling-link: bind $shellDestiny, &quot;throw them in the water&quot;, &quot;drop them on the sand&quot;)]
+[[goodbye]]
+
+you [[hesitate|not ready to let go]]</tw-passagedata><tw-passagedata pid="79" name="goodbye" tags="" position="1575,2250" size="100,100">you (text-colour:magenta)[(cycling-link: bind $shellDestiny, &quot;throw them in the water&quot;, &quot;drop them on the sand&quot;)]
 
 [[goodbye|daydream]]
 
-you [[hesitate|not ready to let go]]
+(set: $shellsInPocket to (a:) )
+(set: $shellCounter to 0)
+
+(set: $shell to &quot;shape&quot;)
 
 &lt;!--
 (click: ?daydream)[
@@ -150,10 +155,7 @@ you [[hesitate|not ready to let go]]
  (set: $shell to &quot;shape&quot;)
 ]--&gt;
 
-(set: $shellsInPocket to (a:) )
-(set: $shellCounter to 0)
-
-(set: $shell to &quot;shape&quot;)</tw-passagedata><tw-passagedata pid="80" name="leave the beach" tags="" position="1275,800" size="100,100">beyond the beach, your life awaits
+</tw-passagedata><tw-passagedata pid="80" name="leave the beach" tags="" position="1275,800" size="100,100">beyond the beach, your life awaits
 
 [[go back to the beach|here]]
 
@@ -168,24 +170,28 @@ you [[hesitate|not ready to let go]]
 
 [[goodbye|daydream]]
 
-you [[hesitate|not ready to let go]]
-
-(click: ?daydream)[
-  (set: $shellCounter to it - 1)
- (set: $randomShell to ($shellsInPocket&#39;s random))
- (set: $shellsInPocket to $shellsInPocket - (a: $randomShell))
- (set: $shell to &quot;shape&quot;)
-]
-
-
-
-&lt;!--(set: $shellsInPocket to (a:) )--&gt;
-&lt;!--(set: $shellCounter to it - 1)
+(set: $shellCounter to it - 1)
 
 (set: $randomShell to ($shellsInPocket&#39;s random))
 (set: $shellsInPocket to $shellsInPocket - (a: $randomShell))
 
-(set: $shell to &quot;shape&quot;)--&gt;</tw-passagedata><tw-passagedata pid="86" name="not?" tags="" position="1450,2575" size="100,100">you [[pick one|byebye]]</tw-passagedata><tw-passagedata pid="87" name="sound" tags="" position="750,1250" size="100,100">[[in fact,]]</tw-passagedata><tw-passagedata pid="88" name="in fact," tags="" position="625,1250" size="100,100">[[you close your eyes]]</tw-passagedata><tw-passagedata pid="89" name="you close your eyes" tags="" position="500,1250" size="100,100">[[for a moment]]</tw-passagedata><tw-passagedata pid="90" name="for a moment" tags="" position="375,1250" size="100,100">and [[you notice]]</tw-passagedata><tw-passagedata pid="91" name="you notice" tags="" position="225,1250" size="100,100">[[how you notice]]</tw-passagedata><tw-passagedata pid="92" name="how you notice" tags="" position="100,1250" size="100,100">the sounds you [[hear|o]]</tw-passagedata><tw-passagedata pid="93" name="o" tags="" position="0,1300" size="100,100">(css: &quot;font-size: 5em&quot;)+(align: &quot;==&gt;&quot;)[[[☉|1]]]</tw-passagedata><tw-passagedata pid="94" name="1" tags="" position="125,1375" size="100,100">(css: &quot;font-size: 5em&quot;)+(align: &quot;==&gt;&lt;=&quot;)[[[☉|2]]]</tw-passagedata><tw-passagedata pid="95" name="2" tags="" position="250,1375" size="100,100">(css: &quot;font-size: 5em&quot;)+(align: &quot;&lt;==&quot;)[[[☉|3]]]</tw-passagedata><tw-passagedata pid="96" name="3" tags="" position="375,1375" size="100,100">(css: &quot;font-size: 5em&quot;)+(align: &quot;==&gt;&lt;=&quot;)[[[☉|4]]]</tw-passagedata><tw-passagedata pid="97" name="4" tags="" position="500,1375" size="100,100">(css: &quot;font-size: 5em&quot;)+(align: &quot;==&gt;&quot;)[[[☉|5]]]</tw-passagedata><tw-passagedata pid="98" name="5" tags="" position="625,1375" size="100,100">(css: &quot;font-size: 5em&quot;)+(align: &quot;==&gt;&lt;==&quot;)[[[☉|6]]]</tw-passagedata><tw-passagedata pid="99" name="6" tags="" position="775,1375" size="100,100">(css: &quot;font-size: 5em&quot;)+(align: &quot;&lt;==&quot;)[[[☉|sea]]]</tw-passagedata></tw-storydata>
+(set: $shell to &quot;shape&quot;)
+
+
+&lt;!--you [[hesitate|not ready to let go]]--&gt;
+
+&lt;!--(click: ?daydream)[
+  (set: $shellCounter to it - 1)
+ (set: $randomShell to ($shellsInPocket&#39;s random))
+ (set: $shellsInPocket to $shellsInPocket - (a: $randomShell))
+ (set: $shell to &quot;shape&quot;)
+]--&gt;
+
+&lt;!--(set: $shellsInPocket to (a:) )--&gt;
+
+</tw-passagedata><tw-passagedata pid="86" name="not?" tags="" position="1450,2575" size="100,100">you [[pick one|byebye]]
+
+you [[hesitate|not ready to let go]]</tw-passagedata><tw-passagedata pid="87" name="sound" tags="" position="750,1250" size="100,100">[[in fact,]]</tw-passagedata><tw-passagedata pid="88" name="in fact," tags="" position="625,1250" size="100,100">[[you close your eyes]]</tw-passagedata><tw-passagedata pid="89" name="you close your eyes" tags="" position="500,1250" size="100,100">[[for a moment]]</tw-passagedata><tw-passagedata pid="90" name="for a moment" tags="" position="375,1250" size="100,100">and [[you notice]]</tw-passagedata><tw-passagedata pid="91" name="you notice" tags="" position="225,1250" size="100,100">[[how you notice]]</tw-passagedata><tw-passagedata pid="92" name="how you notice" tags="" position="100,1250" size="100,100">the sounds you [[hear|o]]</tw-passagedata><tw-passagedata pid="93" name="o" tags="" position="0,1300" size="100,100">(css: &quot;font-size: 5em&quot;)+(align: &quot;==&gt;&quot;)[[[☉|1]]]</tw-passagedata><tw-passagedata pid="94" name="1" tags="" position="125,1375" size="100,100">(css: &quot;font-size: 5em&quot;)+(align: &quot;==&gt;&lt;=&quot;)[[[☉|2]]]</tw-passagedata><tw-passagedata pid="95" name="2" tags="" position="250,1375" size="100,100">(css: &quot;font-size: 5em&quot;)+(align: &quot;&lt;==&quot;)[[[☉|3]]]</tw-passagedata><tw-passagedata pid="96" name="3" tags="" position="375,1375" size="100,100">(css: &quot;font-size: 5em&quot;)+(align: &quot;==&gt;&lt;=&quot;)[[[☉|4]]]</tw-passagedata><tw-passagedata pid="97" name="4" tags="" position="500,1375" size="100,100">(css: &quot;font-size: 5em&quot;)+(align: &quot;==&gt;&quot;)[[[☉|5]]]</tw-passagedata><tw-passagedata pid="98" name="5" tags="" position="625,1375" size="100,100">(css: &quot;font-size: 5em&quot;)+(align: &quot;==&gt;&lt;==&quot;)[[[☉|6]]]</tw-passagedata><tw-passagedata pid="99" name="6" tags="" position="775,1375" size="100,100">(css: &quot;font-size: 5em&quot;)+(align: &quot;&lt;==&quot;)[[[☉|sea]]]</tw-passagedata></tw-storydata>
 <script title="Twine engine code" data-main="harlowe">(function(){"use strict";
 var require,define;!function(){var e={},r={};require=function(i){var n=e[i];return n&&(r[i]=n[1].apply(void 0,n[0].map(require)),e[i]=void 0),r[i]},(define=function(r,i,n){if("function"==typeof r)return r();e[r]=[i,n]}).amd=!0}();/*!
  * https://github.com/paulmillr/es6-shim
